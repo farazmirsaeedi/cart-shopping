@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<head profile="http://gmpg.org/xfn/11">
+<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>Shop Sport</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 		integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<link rel="stylesheet" href="output.css">
+	<link rel="stylesheet" href="output.css">
 </head>
 
-<body class="bg-amber-800">
+<body class="bg-emerald-800">
 	<nav class="flex justify-between items-center m-a-x-w p-5">
 		<div>
 			<form>
@@ -27,6 +27,71 @@
 			</ul>
 		</div>
 	</nav>
+	<main>
+		<!-- input section  -->
+		<div class="p-5 grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center w-full m-a-x-w"
+			id="products">
+
+		</div>
+		<!-- end of input section -->
+
+		<div class="flex justify-between p-5">
+			<div class="group state">
+				<label for="s-state">State (required):</label>
+				<select id="s-state">
+					<option value="">- select -</option>
+					<option value="CA">California (7.5% tax)</option>
+					<option value="IL">Illinois</option>
+					<option value="NH">New Hampshire</option>
+					<option value="PA">Pennsylvania</option>
+				</select>
+			</div>
+			<div class="group method">
+				<label for="r-method-pickup">Shipping and Handling:</label><br>
+				<input type="radio" value="pickup" name="r_method" id="r-method-pickup" checked> <label
+					for="r-method-pickup">Pickup (free)</label><br>
+
+				<input type="radio" value="usps" name="r_method" id="r-method-usps"> <label for="r-method-usps">US Mail
+					($2/item)</label><br>
+
+				<input type="radio" value="ups" name="r_method" id="r-method-ups"> <label for="r-method-ups">UPS
+					($3/item)</label>
+			</div>
+
+			<div class="group special">
+				<label for="c-special-gift">Special:</label><br>
+				<input type="checkbox" value="YES" name="c-special-gift" id="c-special-gift"> <label
+					for="c-special-gift">This is a gift (include a card)</label><br>
+
+				<input type="checkbox" value="YES" name="c-special-email" id="c-special-email"> <label
+					for="c-special-email">Sign up for the H+ mailing list</label><br>
+
+				<input type="checkbox" value="YES" name="c-special-recipes" id="c-special-recipes"> <label
+					for="c-special-recipes">Include H+ recipes (free!)</label>
+			</div>
+
+			<div class="group calc">
+				<p>
+					<label for="btn-estimate">Click to estimate:</label><br>
+					<input type="submit" value="Estimate Total" id="btn-estimate">
+					<input class="w-52 mr-5" type="text" id="txt-estimate" placeholder="$0.00">
+				</p>
+
+				<div id="results"></div>
+			</div>
+		</div>
+
+		</form>
+		</section>
+		<div class="clear"></div>
+		</div>
+		</div>
+
+		</div>
+	</main>
+
+
+	<script src="script.js"></script>
 </body>
 
 </html>
