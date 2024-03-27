@@ -36,7 +36,7 @@
 		<!-- end of input section -->
 
 		<div class="flex justify-between p-5">
-			<div class="group state">
+			<div class="group state text-white">
 				<label for="s-state">State (required):</label>
 				<select id="s-state">
 					<option value="">- select -</option>
@@ -46,7 +46,7 @@
 					<option value="PA">Pennsylvania</option>
 				</select>
 			</div>
-			<div class="group method">
+			<div class="group method text-white">
 				<label for="r-method-pickup">Shipping and Handling:</label><br>
 				<input type="radio" value="pickup" name="r_method" id="r-method-pickup" checked> <label
 					for="r-method-pickup">Pickup (free)</label><br>
@@ -58,7 +58,7 @@
 					($3/item)</label>
 			</div>
 
-			<div class="group special">
+			<div class="group special text-white">
 				<label for="c-special-gift">Special:</label><br>
 				<input type="checkbox" value="YES" name="c-special-gift" id="c-special-gift"> <label
 					for="c-special-gift">This is a gift (include a card)</label><br>
@@ -70,10 +70,10 @@
 					for="c-special-recipes">Include H+ recipes (free!)</label>
 			</div>
 
-			<div class="group calc">
+			<div class="group calc text-white">
 				<p>
 					<label for="btn-estimate">Click to estimate:</label><br>
-					<input type="submit" value="Estimate Total" id="btn-estimate">
+					<input class="mt-1 mr-1 bg-green-600 hover:bg-green-700 p-1 rounded-md cursor-pointer" type="submit" value="Estimate Total" id="btn-estimate">
 					<input class="w-52 mr-5" type="text" id="txt-estimate" placeholder="$0.00">
 				</p>
 
