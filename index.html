@@ -36,8 +36,8 @@
 		<!-- end of input section -->
 
 		<div class="flex justify-between p-5">
-			<div class="group state text-white">
-				<label for="s-state">State (required):</label>
+			<div class="group state ">
+				<label class="text-white" for="s-state">State (required):</label>
 				<select id="s-state">
 					<option value="">- select -</option>
 					<option value="CA">California (7.5% tax)</option>
@@ -74,7 +74,7 @@
 				<p>
 					<label for="btn-estimate">Click to estimate:</label><br>
 					<input class="mt-1 mr-1 bg-green-600 hover:bg-green-700 p-1 rounded-md cursor-pointer " type="submit" value="Estimate Total" id="btn-estimate">
-					<input class="w-52 mr-5 outline-0 p-1 rounded-md" type="text" id="txt-estimate" placeholder="$0.00">
+					<input class="w-52 mr-5 outline-0 p-1 rounded-md" type="text" id="total" placeholder="$0.00">
 				</p>
 
 				<div id="results"></div>
@@ -83,7 +83,6 @@
 
 		</form>
 		</section>
-		<div class="clear"></div>
 		</div>
 		</div>
 
