@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@media (min-width:1400px) {
+    .m-a-x-w{
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+}
